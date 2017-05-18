@@ -1,0 +1,18 @@
+package blatt3Aufgabe1;
+
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Fur Fur_Object = new Fur(10);
+		Sheep schaf_Object = new Sheep("sheep1", Fur_Object);
+		
+		Sheep clone_sheep = schaf_Object.clone();
+		System.out.println("first sheep : " + schaf_Object.toString());
+		System.out.println("second sheep: " + clone_sheep.toString());
+		clone_sheep.name = "sheep after shear";
+		System.out.println("second sheep: " + clone_sheep.toString().shear());
+
+		
+	}
+}

@@ -1,0 +1,12 @@
+package blatt3Aufgabe3;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		C1 a =new C2();
+		C2 b =new C2();
+		// Stelle 1
+	}
+
+}

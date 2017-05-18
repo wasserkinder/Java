@@ -1,0 +1,35 @@
+package blatt3Aufgabe1;
+
+public class main {
+
+	public static void main(String[] args) {
+		
+		//Clone
+		Fur Fur_Object = new Fur(10);
+		Sheep schaf_Object = new Sheep("sheep1", Fur_Object);
+		Sheep clone_sheep = schaf_Object.clone();
+		System.out.println("first sheep : " + schaf_Object.toString());
+		System.out.println("clone sheep: " + clone_sheep.toString());
+		
+		//Changing with clone		
+		System.out.println("\n after changing with clone \n"); 
+		clone_sheep.name = "sheep after shear";
+		clone_sheep.shear();
+		System.out.println("clone sheep: " + clone_sheep.toString());
+		System.out.println("first sheep : " + schaf_Object.toString());
+		
+		//shallowClone
+		Fur second_fur = new Fur(11);
+		Sheep second_schaf = new Sheep("Sheep2", second_fur);
+		Sheep shallowclone_sheep = second_schaf;
+		System.out.println("second sheep : " + second_schaf.toString());
+		System.out.println("shallowclone sheep: " + shallowclone_sheep.toString());
+		
+		//Changing with shallowClone		
+		System.out.println("\n after changing with shallowclone \n"); 
+		shallowclone_sheep.name = "sheep2 after shear";
+		shallowclone_sheep.shear();
+		System.out.println("shallowclone sheep: " + shallowclone_sheep.toString());
+		System.out.println("second sheep : " + second_schaf.toString());
+	}
+}
