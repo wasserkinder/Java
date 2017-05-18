@@ -1,0 +1,12 @@
+package aufgabe1;
+
+public class traceOperator implements Operator{
+	public Object execute(Matrix2D a) {
+		double [][] m = a.getMatrix();
+		double trace = 0; 
+		for(int i = 0; i < a.matrix.length; i++){
+			trace = trace + m[i][i];
+		}
+		return trace;
+	}
+}

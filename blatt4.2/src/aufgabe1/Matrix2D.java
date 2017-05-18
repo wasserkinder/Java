@@ -20,12 +20,19 @@ public class Matrix2D {
 			}
 		}
 	}
+	public Matrix2D(double[][] a){
+		int n = a.length;
+		
+		matrix = new double[n][n];
+
+	}
 	public double[][] getMatrix(){
 		return matrix;
 	}
 	
 	public Matrix2D clone() {
-		return this;
+		return new Matrix2D() {
+		};
 	}
 	
 	public String toString(){

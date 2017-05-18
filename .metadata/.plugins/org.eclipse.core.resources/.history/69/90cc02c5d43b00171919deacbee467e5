@@ -1,0 +1,15 @@
+package aufgabe1;
+
+public class transposeOperator implements Operator{
+	public Object execute(Matrix2D a){
+		double[][]m = a.matrix.clone();
+		double[][]transpose = a.getMatrix();
+		for(int i = 0; i < a.matrix.length; i++){
+			for(int j  = 0; j < a.matrix.length; j++){
+				transpose[j][i] = m[i][j];
+			}
+		}
+		return transpose;
+	}
+
+}
