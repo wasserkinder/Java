@@ -34,6 +34,6 @@ public class Point3D extends point {
 		return String.valueOf(z);
 	}
 	public String string(){
-		return String.format("X: " + x_koordinate() + "\nY: " + y_koordinate() + "\nZ: " + z_koordinate());
+		return String.format("X: " + x_koordinate() + "\nY: " + y_koordinate() + "\nZ: " + z_koordinate(), null);
 	}
 }
