@@ -29,6 +29,6 @@ public class point {
 		return String.valueOf(y);
 	}
 	public String string(){
-		return String.format("X: " + x_koordinate() + "\nY: " + y_koordinate());
+		return String.format("X: " + x_koordinate() + "\nY: " + y_koordinate(), null);
 	}
 }
