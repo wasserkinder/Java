@@ -32,3 +32,6 @@ public class point {
 		return String.format("X: " + x_koordinate() + "\nY: " + y_koordinate());
 	}
 }
+//Mit den Änderungen in point.java (das eigentlich "Point.java" heißen sollte) und in Point3D.java erhalte ich die Ausgabe:
+// siehe file change proposal: "Update point.java"
+
